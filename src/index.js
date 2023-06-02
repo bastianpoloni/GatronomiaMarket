@@ -1,9 +1,13 @@
-import { Proveedor } from "./Proveedor";
-import { Articulo } from "./articulo";
 
-const proveedor = new Proveedor("Proveedor1", 100);
-const articulo1 = new Articulo("Articulo1", "email1", "telefono1");
-const articulo2 = new Articulo("Articulo2", "email2", "telefono2");
-proveedor.addArticulo(articulo1);
-proveedor.addArticulo(articulo2);
-console.log(proveedor.getInfoProveedor());
+
+import {Proveedor} from './Proveedor.js';
+import {Articulo} from './articulo.js'; 
+
+const proveedor1 = new Proveedor('Juan', 1000);
+const articulo1 = new Articulo('Laptop', 'juan@gmail', '123456789');
+const articulo2 = new Articulo('Teclado', 'juan@gmail', '123456789');
+const articulo3 = new Articulo('Mouse', 'juan@gmail', '123456789');
+proveedor1.addArticulo(articulo1);
+proveedor1.addArticulo(articulo2);
+proveedor1.addArticulo(articulo3);
+console.log(proveedor1.getInfoProveedor());
