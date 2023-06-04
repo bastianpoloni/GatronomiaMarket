@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch",
-    "build": "babel src -d build  && webpack --mode production",
+    "build": "babel src -d build  && webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
   "keywords": [],
   "author": "",

@@ -30,4 +30,8 @@ export class Articulo{
     set telefono(telefono){
         this.telefono = telefono;
     }
+
+    getInfoArticulo(){
+        return `Articulo: ${this.nombre}, Email: ${this.email}, Telefono: ${this.telefono}`;
+    }
 }

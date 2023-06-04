@@ -1,5 +1,3 @@
-
-
 import {Proveedor} from './Proveedor.js';
 import {Articulo} from './articulo.js'; 
 
