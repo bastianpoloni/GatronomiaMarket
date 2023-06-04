@@ -1,13 +1,11 @@
 {
   "name": "modulo-4-individual-2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch",
     "build": "babel src -d build  && webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
-  
   },
   "keywords": [],
   "author": "",
@@ -22,5 +20,15 @@
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0",
     "webpack-merge": "^5.9.0"
-  }
+  },
+  "dependencies": {
+    "abbrev": "^1.1.1",
+    "ignore-by-default": "^1.0.1",
+    "nopt": "^1.0.10",
+    "pstree.remy": "^1.1.8",
+    "simple-update-notifier": "^1.1.0",
+    "touch": "^3.1.0",
+    "undefsafe": "^2.0.5"
+  },
+  "description": ""
 }
