@@ -1,11 +1,17 @@
 import {Proveedor} from './Proveedor.js';
 import {Articulo} from './articulo.js'; 
 
-const proveedor1 = new Proveedor('Juan', 1000);
-const articulo1 = new Articulo('Laptop', 'juan@gmail', '123456789');
-const articulo2 = new Articulo('Teclado', 'juan@gmail', '123456789');
-const articulo3 = new Articulo('Mouse', 'juan@gmail', '123456789');
+function calcularImpuesto(proveedor){
+    let impuesto = proveedor.precio * 0.19;
+    return `El impuesto total es ${impuesto}`;
+}
+
+const proveedor1 = new Proveedor('Juan Perez', 1000);
+const articulo1 = new Articulo('Laptop', 'juan@gmail.com', '12345678-9');
+const articulo2 = new Articulo('Teclado', 'juan@gmail.com', '12345678-9');
+const articulo3 = new Articulo('Mouse', 'juan@gmail.com', '12345678-9');
 proveedor1.addArticulo(articulo1);
 proveedor1.addArticulo(articulo2);
 proveedor1.addArticulo(articulo3);
 console.log(proveedor1.getInfoProveedor());
+console.log(calcularImpuesto(proveedor1));

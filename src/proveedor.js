@@ -1,3 +1,4 @@
+import { Articulo } from "./articulo";
 export class Proveedor{
     nombre;
     articulo;
@@ -5,7 +6,7 @@ export class Proveedor{
     constructor(nombre, precio){
         this.nombre = nombre;
         this.precio = precio;
-        this.articulo = [];
+        this.articulos = [];
     }
 
 get nombre(){
@@ -22,12 +23,13 @@ set precio(precio){
     this.precio = precio;
 }
 
+
 getInfoProveedor(){
-    return `Proveedor: ${this.nombre}, Precio: ${this.precio}, Articulos: ${this.articulo}`;
+    return `Proveedor: ${this.nombre}, Precio: $${this.precio}, Articulos: ${this.articulos}`;
 }
 
 addArticulo(articulo){
-    this.articulo.push(articulo);
+    this.articulos.push(articulo);
 }
 
 }
