@@ -1,4 +1,3 @@
-import { Articulo } from "./articulo";
 export class Proveedor{
     nombre;
     articulo;
@@ -33,3 +32,4 @@ addArticulo(articulo){
 }
 
 }
+

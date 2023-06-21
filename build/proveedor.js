@@ -19,7 +19,7 @@ var Proveedor = /*#__PURE__*/function () {
     _defineProperty(this, "precio", void 0);
     this.nombre = nombre;
     this.precio = precio;
-    this.articulo = [];
+    this.articulos = [];
   }
   _createClass(Proveedor, [{
     key: "nombre",
@@ -40,12 +40,12 @@ var Proveedor = /*#__PURE__*/function () {
   }, {
     key: "getInfoProveedor",
     value: function getInfoProveedor() {
-      return "Proveedor: ".concat(this.nombre, ", Precio: ").concat(this.precio, ", Articulos: ").concat(this.articulo);
+      return "Proveedor: ".concat(this.nombre, ", Precio: $").concat(this.precio, ", Articulos: ").concat(this.articulos);
     }
   }, {
     key: "addArticulo",
     value: function addArticulo(articulo) {
-      this.articulo.push(articulo);
+      this.articulos.push(articulo);
     }
   }]);
   return Proveedor;

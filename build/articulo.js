@@ -45,6 +45,11 @@ var Articulo = /*#__PURE__*/function () {
     set: function set(telefono) {
       this.telefono = telefono;
     }
+  }, {
+    key: "getInfoArticulo",
+    value: function getInfoArticulo() {
+      return "Articulo: ".concat(this.nombre, ", Email: ").concat(this.email, ", Telefono: ").concat(this.telefono);
+    }
   }]);
   return Articulo;
 }();
